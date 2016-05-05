@@ -44,7 +44,7 @@
 
    p {
         color: black;
-        padding: 25px 5px 5px 5px;
+        padding: 25px 5px 0px 5px;
         margin-left: 16px;
         margin-right: 16px;
      }  
@@ -60,26 +60,31 @@
       border: 1px solid black;
       background-color: grey;
       width: 95%;
-      height: auto;
+      height: 200px;
       margin-bottom: 20px;
-        position: relative;   
+      position: relative; 
+      overflow: hidden;  
      }
 
      .c32 {
-        border: 1px solid black;
+      border: 1px solid black;
       background-color: grey;
       width: 95%;
+      height: 200px;
       margin-bottom: 20px;
-        position: relative;
+      position: relative;
+      overflow: hidden;
      }
 
      .c33 {
-        border: 1px solid black;
+      border: 1px solid black;
       background-color: grey;
       width: 95%;
-      height: auto;
+      height: 200px;
       margin-bottom: 20px;
-        position: relative;
+      position: relative;
+      overflow: hidden;
+      padding: 0px 0px 5px 0px;
      }
       
 
