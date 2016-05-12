@@ -1,0 +1,91 @@
+body { 
+	padding-top: 0px; 
+}
+.navbar {
+	border-radius: 0px;
+	border: 1px solid #080808;
+	margin-bottom: 0px;
+}
+.navbar-default {
+	border-color: #080808;
+}
+.top-bar {
+	background-color: #777;
+}
+.navbar-default .navbar-collapse {
+	border-color: #080808;
+	
+}
+.navbar-default .navbar-brand {
+	color: #080808;
+	font-weight: bold;
+	font-size: 2em;
+}
+.container-fluid .navbar-header {
+	padding-left: 10px;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	text-decoration: none;
+	color: #080808;
+}
+.navbar-header button.navbar-toggle {
+	border-color: #080808;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+	border-color: #ddd;
+}
+.navbar-default .navbar-header .icon-bar {
+	background-color: #080808;
+}
+.navbar-header button.navbar-toggle:hover .icon-bar, .navbar-header button.navbar-toggle:focus .icon-bar {
+	background-color: #ddd;
+}
+.navbar-default .navbar-nav>li>a {
+	color: black;
+	text-align: center;
+	padding: 0px;
+	font-weight: bold;
+}
+hr {
+	margin: 0px;
+	border-color: #080808;
+}
+.navbar-nav {
+	margin: 0px 0px;
+	background-color: white;
+	overflow: hidden;
+}	
+
+/* END OF HEADER */
+
+.container-fluid h2 {
+	margin-bottom: 25px;
+	color: black;
+	font-size: 2em;
+	font-weight: bold;
+}
+.container-fluid h3 {
+	margin-top: 0px;
+	margin-bottom: 15px;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.container-fluid div{
+	padding: 0px;
+}
+#main-content {
+	background-color: grey;
+	padding: 10px;
+}
+#main-content p {
+	color: black;
+}
+@media (max-width: 767px) {
+	#container-2 {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
