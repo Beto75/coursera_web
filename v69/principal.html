@@ -32,7 +32,10 @@ $(document).ready(function() {
 
 	$("#noticias a").click(function(){
 
-		$("#contenidos_externos").load("http://beto75.github.io/coursera_web/v69/deportivas.html");
+		var url=$(this).attr("href");
+		$("#contenidos_externos").load(url + " #noticia");// atencio espai despres de " #noticia"
+
+		/*$("#contenidos_externos").load("http://beto75.github.io/coursera_web/v69/deportivas.html #noticia");*/
 
 
 		return false;
