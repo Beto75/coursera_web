@@ -32,14 +32,12 @@ $(document).ready(function() {
 
 	$("#login").submit(function(){
 
-		var datosFormulario={
-								usuario:$("#usuario").val(),
-								contra:$("#contra").val()
-							}
+		var datosFormulario={usuario:$("#usuario").val(),
+							 contra:$("#contra").val()}
 
-		$.get('login.php', datosFormulario, procesarDatos);//enviem dades al arxiu php
+		$.get("login.php", datosFormulario, procesarDatos);//enviem dades al arxiu php
 
-alert(datosFormulario);
+
 
 		return false; //faci la funcio però no la funcio default de submit que carregaria una pagina
 
