@@ -25,46 +25,32 @@
 	border: 1px solid white;	
 }
 </style>
-<script src="Jquery/jquery-2.2.4.min.js"></script>
+<script src="../Jquery/jquery-2.1.3.js"></script>
 <script>
 
 $(document).ready(function() {
 
 	$("#login").submit(function(){
-
+		
 		/*var datosFormulario={usuario:$("#usuario").val(),
-							 contra:$("#contra").val()}*/ //Per pocs camps
-
-		var datosFormulario=$(this).serialize(); //recorre tots els camps de #login
-
-		$.get("login.php", datosFormulario, procesarDatos).error(ProcesarError);//enviem dades al arxiu php
-
-
-
-		return false; //faci la funcio però no la funcio default de submit que carregaria una pagina
-
+		                     contra:$("#contra").val()}	*/
+							 
+		var datosFormulario=$(this).serialize();
+							 
+		$.get("login.php", datosFormulario, procesarDatos);
+		
+		return false;
+		
+		
 	});
-
-	function procesarDatos(datos_devueltos){		//processem la resposta a datos_devueltos
-
-		if(datos_devueltos=="autorizado"){
-
-			$("#contenidos_externos").html("<p>Usuario correcto, bienvenido</p>");
-
-		}else {
-			
-			$("#contenidos_externos").html("<p>Usuario no autorizado</p>");
-
-		}
+	
+	function procesarDatos(datos_devueltos){		
+		
+		
+				
 	}
-
-	function ProcesarError(){
-
-		var msgError="Ooops ha ocurrido algo inesperado, porfavor intentalo de nuevo";
-		$("#contenidos_externos").html("<p>" + msgError + "</p>");
-	}
-
-			
+	
+				
 }); 
 </script>
 </head>
@@ -86,12 +72,8 @@ $(document).ready(function() {
 					</td>
                     </tr>
                     <tr>
-                    <td>
-						<label for="contra">Contaseña: </label>
-                     </td>
-                     <td>
-						<input type="text" name="contra" id="contra">
-					</td>
+                    <td>&nbsp;</td>
+                     <td>&nbsp;</td>
                     </tr>
                     <tr>
                     <td colspan="2" align="center">
