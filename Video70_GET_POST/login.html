@@ -45,10 +45,13 @@ $(document).ready(function() {
 
 	function procesarDatos(datos_devueltos){		//processem la resposta a datos_devueltos
 
+		alert(datos_devueltos);
 		if(datos_devueltos=="autorizado"){
 
 			$("#contenidos_externos").html("<p>Usuario correcto, bienvenido</p>");
+
 		}else {
+			
 			$("#contenidos_externos").html("<p>Usuario no autorizado</p>");
 
 		}
